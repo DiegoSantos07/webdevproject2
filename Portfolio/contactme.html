@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- Declares the document type as HTML5 -->
+<html lang="en"> <!-- Opens the HTML document and sets the language to English -->
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!-- Normalize.css for consistent rendering across browsers -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"> <!-- Google Fonts for Poppins font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!-- Font Awesome for icons -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> <!-- Link to custom stylesheet -->
+
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets viewport for responsive design -->
+    <title>Contact Me</title> <!-- Sets the webpage title -->
+</head>
+<body> <!-- Opens the body section -->
+
+    <!-- Header Section -->
+    <header> <!-- Header containing navigation menu -->
+        <nav> <!-- Navigation bar for main links -->
+            <ul> <!-- Unordered list for navigation items -->
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li> <!-- Home link with icon -->
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li> <!-- About link with icon -->
+                <li><a href="hobbies.html"><i class="fas fa-plane"></i> Hobbies</a></li> <!-- Hobbies link with icon -->
+                <li><a href="contactme.html"><i class="fas fa-envelope"></i> Contact Me</a></li> <!-- Contact link with icon -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main> <!-- Main content for the contact page -->
+        <h1>Contact Me</h1> <!-- Main heading for the page -->
+        <p>If you would like to send me a message or ask any questions, please fill out the form below:</p> <!-- Introductory paragraph -->
+
+        <!-- Contact Form -->
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain"> <!-- Form to send email -->
+            <label for="name">Name:</label> <!-- Label for the name input -->
+            <input type="text" id="name" placeholder="Enter your name" required> <!-- Text input for name -->
+            
+            <label for="email">Email:</label> <!-- Label for the email input -->
+            <input type="email" placeholder="Enter your email" id="email" name="email" required> <!-- Email input -->
+            
+            <label for="message">Message:</label> <!-- Label for the message textarea -->
+            <textarea id="message" name="message" required></textarea> <!-- Textarea for message -->
+            
+            <button type="submit">Submit</button> <!-- Submit button for the form -->
+        </form>
+        
+    </main>
+
+    <!-- Footer Section -->
+    <footer> <!-- Footer with social media links -->
+        <div class="footer-content"> <!-- Footer content container -->
+            <div class="social-links"> <!-- Container for social media links -->
+                <a href="https://facebook.com/diegofreitas07" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> <!-- Facebook link with icon -->
+                <a href="https://instagram.com/diegosantosf_" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> <!-- Instagram link with icon -->
+                <a href="https://linkedin.com/in/diego-santos-de-freitas-2009b8234" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> <!-- LinkedIn link with icon -->
+                <a href="https://github.com/DiegoSantos07" target="_blank"><i class="fab fa-github"></i> GitHub</a> <!-- GitHub link with icon -->
+            </div>
+        </div>
+    </footer>
+
+</body> <!-- Closes body section -->
+</html> <!-- Closes HTML document -->

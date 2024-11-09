@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); /* Imports the font from Google Fonts */
+
+* { 
+    box-sizing: border-box; /* Ensures padding and border */
+    margin: 0 auto; /**/
+    font-family: Poppins, sans-serif; /*Default font established for the website, with some exceptions */
+}
+
+@keyframes fadeIn { /* Defines the animation effect */
+    0% {
+        opacity: 0; /* Starts transparent */
+    }
+    100% {
+        opacity: 1; /* Ends opaque */
+    }
+}
+
+body {
+    margin-left: 0; /* Removes left margin */
+    margin-right: 0; /* Removes right margin*/
+    padding: 0; /* Removes padding */
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(200, 200, 255, 0.8)); /* Applies background gradient with 80% opacity and 20% transparency */
+    color: #afcef4; /* Defines the colour */
+    animation: fadeIn 1.5s ease-in-out; /* Sets the effect and duration when page loads */
+}
+
+nav {
+    padding: 50px; /* Defines the space around nav bar */
+}
+
+nav ul {
+    display: flex; /* Sets items to display in row */
+    justify-content: center; /* Defines items horizontally */
+    list-style: none; /* Removes default style */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+}
+
+nav ul li {
+    margin: 0 20px; /* Defines the horizontal space between nav items */
+}
+
+nav ul > li {
+    font-weight: bold; /* Defines bold text applied to children through inheritance */
+}
+
+nav ul li:nth-child(n) { 
+    background-color: rgba(116, 143, 251, 0.1); /* Defines a background colour */
+    padding: 5px; /* Sets spaces between items */
+    border-radius: 10px; /* Defines rounded corners */
+}
+
+nav a {
+    text-decoration: none; /* Removes decoration from links */
+    color: rgb(0, 0, 0); /* Sets black colour*/
+    opacity: 0.5; /* Reduces the opacity */
+    transition: opacity 0.5s ease-in; /* Defines hover opacity */
+}
+
+nav a:hover {
+    opacity: 1; /* Increases opacity */
+    transform: translateX(5px) scale(1.05); /* Moves and scales the link*/
+    color: #0004ff; /* Defines the blue colour */
+}
+
+nav a:not(.active) {
+    opacity: 0.5; /* Sets opacity reduction for inactive links */
+}
+
+nav a.active {
+    opacity: 1; /* Sets opacity for active links */
+} 
+
+.header-content {
+    display: flex; /* Sets content in a row */
+    align-items: center; /* Sets items to align vertically */
+    justify-content: flex-end; /* Sets alignment to the right*/
+    flex-grow: 1; /* Sets expansion of header */
+    padding: 100px; /* Sets space around */
+    color: black; /* Defines the black colour */
+}
+
+h1 {
+    font-family: Poppins, sans-serif; /* Defines the font specifically for h1 */
+    display: flex; /* Defines alignment */
+    flex-direction: column; /* Defines content vertically */
+    align-items: center; /* Defines content horizontally */
+    justify-content: center; /* Centers content vertically */
+    text-align: center; /* Defines text in the center*/
+    padding: 20px; /* Sets space around */
+    color: #333; /* Defines the colour*/
+    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3); /* Creates shadow around the text */
+}
+
+h1:hover {
+    transform: scale(1.05); /* Scales the content when hover */
+}
+
+h2, time {
+    margin-top: 80px; /* Defines top margin */
+    margin-left: 100px; /* Defines left margin */
+    margin-right: 100px; /* Defines right margin */
+}
+
+p {
+    font-family: Roboto, sans-serif; /* Defines font specifically for paragraph */
+    margin-left: 100px; /* Defines left margin */
+    margin-right: 100px; /* Defines right margin */
+    font-size: 1.2rem; /* Defines the font size */
+    line-height: 1.8; /* Creates space between lines */
+    text-align: center; /* Centers the text */
+    color: #333; /* Defines the colour */
+    padding: 50px; /* Sets space around */
+    border-radius: 8px; /* Defines rounded corners */
+}
+
+.profile-description {
+    margin-top: 80px; /* Defines top margin */
+    margin-bottom: 80px; /* Defines bottom margin */
+    color: #444; /* Defines colour */
+    font-size: 1rem; /* Defines the font size */
+    font-weight: 400;  /* Defines font weight */
+    line-height: 1.6; /* Creates space between lines */
+    text-align: justify; /* Justifies text */
+    padding: 15px; /* Sets space around */
+    background-color: rgba(245, 245, 245, 0.827); /* Defines the background colour*/
+    border-radius: 10px; /* Defines rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Sets shadow effect*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Sets transition on hover effect*/
+}
+
+.profile-description:hover {
+    transform: scale(1.10); /* Scales on hover */
+    box-shadow: 0 12px 18px rgb(0, 0, 0); /* Creates a darker shadow effect */
+} 
+
+.profile-image img {
+    width: 350px; /* Defines width */
+    height: auto; /* Defines aspect ratio */
+    border-radius: 5%; /* Defines rounded corners */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1); /* Creates a shadow effect*/
+    float: right; /* Positions the image on the right */
+}
+
+.profile-image img:hover {
+    transform: scale(1.15); /* Scales on hover */
+}
+
+.about-image img {
+    display: block; /* Positions the image in the center */
+    width: 350px; /* Sets width */  
+    height: auto; /* Sets width */
+    border-radius: 5%; /* Defines rounded corners */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1); /* Creates a shadow effect*/
+    margin: 100px auto; /* Defines margin and creates top margin */
+}
+
+.about-image img:hover {
+    transform: scale(1.05) rotate(2.5deg); /* Scales and rotates */
+}
+
+.image-item {
+    text-align: center; /* Positions the image in the center */
+}
+
+.image-item img {
+    width: 45%; /* Sets width */
+    height: auto; /* Sets width */
+    margin-top: 40px; /* Defines margin top */
+    border-radius: 8px; /* Creates rounded corners */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Creates shadow effect */
+}
+
+.image-item img:hover {
+    transform: scale(1.05) rotate(2.5deg); /* Scales and rotates */
+}
+
+.about-description, .image-description {
+    margin-top: 80px; /* Defines top margin */
+    margin-bottom: 80px; /* Defines bottom margin */
+    color: #444; /* Defines colour */
+    font-size: 1rem; /* Defines font size*/
+    font-weight: 400; /* Defines font weight */
+    line-height: 1.6; /* Defines space between lines */
+    text-align: justify; /* Justifies text*/
+    background-color: rgba(245, 245, 245, 0.827); /* Defines space around */
+    border-radius: 10px; /* Creates rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Creates shadow effect */
+}
+
+.about-description:hover, .image-description:hover {
+    transform: translateY(-10px); /* Bounces up */
+    color: #0004ff; /* Defines blue colour on hover*/
+}
+
+footer {
+    background-color: rgba(0, 123, 255, 0.2); /* Defines footer background colour*/
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1); /* Creates shadow effect*/
+    padding: 1rem; /* Defines space around */
+    text-align: center; /* Centers footer text*/
+}
+
+.footer-content {
+    display: flex; /* Flex layout */
+    justify-content: center; /* Centers content*/
+    align-items: center; /* Aligns items vertically*/
+    gap: 10px; /* Defines spacing between elements */
+}
+
+footer p {
+    margin: 0; /* Removes padding */
+    padding: 10px; /* Creates space around */
+}
+
+footer a {
+    color: #333; /* Defines colour */
+    text-decoration: none; /* Removes text decoration */
+    font-size: 1rem; /* Sets font size*/
+}
+
+footer a:hover {
+    color: #007BFF; /* Defines blue colour on hover */
+}
+
+footer i {
+    margin-right: 5px; /* Adds spacing to the right of icons in the footer for better readability */
+}
+
+p {
+    color: #444; /* Sets a dark gray color for paragraph text */
+    margin-bottom: 1rem; /* Adds space below each paragraph */
+}
+
+aside {
+    width: 30%; /* Sets the width of the sidebar to 30% of the container */
+    padding: 10px; /* Adds padding inside the sidebar for spacing */
+    margin-left: 0; /* Ensures no extra margin on the left of the sidebar */
+}
+
+aside h2 {
+    margin-bottom: 1rem; /* Adds space below the header in the sidebar */
+    color: #333; /* Sets the header color to a darker gray */
+}
+
+.social-links {
+    display: flex; /* Uses flexbox to organize social links */
+    flex-direction: column; /* Arranges links vertically in a column */
+    gap: 10px; /* Adds space between each link */
+}
+
+.social-links a {
+    text-decoration: none; /* Removes underline from social link text */
+    color: #007BFF; /* Sets a blue color for links */
+    font-size: 1rem; /* Sets the font size of the links */
+    transition: color 0.3s; /* Smooth transition when changing link color */
+}
+
+.social-links a:hover {
+    color: #0056b3; /* Changes link color to a darker blue when hovered */
+}
+
+form {
+    max-width: 500px; /* Limits form width to 500px */
+    margin: auto; /* Centers the form horizontally */
+    padding: 50px; /* Adds padding inside the form */
+}
+
+form input,
+form textarea {
+    width: 100%; /* Sets input and textarea to take up full width of the form */
+    padding: 10px; /* Adds padding inside input and textarea */
+    margin-bottom: 15px; /* Adds space below each form element */
+    border-radius: 5px; /* Rounds the corners of input and textarea */
+    border: 1px solid #ddd; /* Adds a light border to input and textarea */
+}
+
+form button {
+    padding: 10px 20px; /* Adds padding inside the button */
+    border: none; /* Removes default border around button */
+    border-radius: 5px; /* Rounds the button corners */
+    background-color: rgba(0, 123, 255, 0.8); /* Sets semi-transparent blue background */
+    color: white; /* Sets button text color to white */
+    font-size: 1rem; /* Sets button font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+form button:hover {
+    background-color: rgba(0, 123, 255, 1); /* Increases opacity when button is hovered */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+a[href^="https"] {
+    color: #007BFF; /* Sets color for all links starting with "https" */
+}
+
+input[type="email"], [type="text"] {
+    border: 2px solid #007BFF; /* Adds blue border to email and text inputs */
+}
+
+input[type="text"]:valid::placeholder {
+    color: black; /* Sets placeholder color to black if input is valid */
+}
+
+input[type="text"]:invalid::placeholder {
+    color: blue; /* Sets placeholder color to blue if input is invalid */
+}
+
+input[type="email"]:valid::placeholder {
+    color: black; /* Sets placeholder color to black if email is valid */
+}
+
+input[type="email"]:invalid::placeholder {
+    color: blue; /* Sets placeholder color to blue if email is invalid */
+}
+
+footer::before {
+    content: "Thank you for visiting 2024 Diego's Portfolio"; /* Adds text before footer content */
+    display: block; /* Displays the text as a block element */
+    margin-bottom: 10px; /* Adds space below the text */
+    font-weight: bold; /* Makes the text bold */
+    color: black; /* Sets the text color to black */
+}
+
+form button:focus {
+    outline: none; /* Removes the default outline around button on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8); /* Adds a blue shadow around button on focus */
+}
+
+@media (max-width: 768px) { /* Media query for screens 768px wide or less */
+    nav ul {
+        flex-direction: column; /* Stacks nav items vertically on smaller screens */
+        padding: 0; /* Removes padding */
+    }
+
+    nav ul li {
+        margin: 15px 0; /* Adds space between nav items */
+        text-align: center;  /* Centers nav items */
+        padding: 20px; /* Adds padding to each item */
+        width: 100%; /* Makes each nav item take up full width */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduces h1 font size on smaller screens */
+        padding: 10px; /* Adds padding around the header */
+    }
+
+    p {
+        margin-left: 20px; /* Adds left margin for paragraphs */
+        margin-right: 20px; /* Adds right margin for paragraphs */
+        font-size: 1rem; /* Sets font size */
+        padding: 20px; /* Adds padding inside paragraphs */
+    }
+
+    form {
+        padding: 20px; /* Reduces padding around form on smaller screens */
+    }
+
+    form button {
+        font-size: 0.9rem; /* Reduces button font size */
+    }
+
+    .profile-image img,
+    .about-image img {
+        width: 100%; /* Sets images to full width */
+        height: auto; /* Maintains aspect ratio */
+        margin-bottom: 20px; /* Adds space below images */
+    }
+
+    .image-item img {
+        width: 100%; /* Sets images in image-item to full width */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stacks footer items vertically */
+        gap: 5px; /* Reduces space between footer items */
+    }
+}
+
